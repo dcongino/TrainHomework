@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="container text-center" id="title">
+            <h1>Welcome to Graduation Station!</h1>
+            <h3>Where Coding Bootcamp Sends You Off to a More Lucrative Future...</h3>
+        </div>
+        <h4 class="text-center" id="current">Current Train Schedule</h4>
+        <div class="container">
+            <table class="table table-dark text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency(min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody id ="trainRows" class="text-center">
+
+                </tbody>
+              </table>
+           
+        </div>
+        <h4 class="text-center">Add Train</h4>
+        <div class="container border border-primary" id="title2">
+            <form>
+                <div class="form-group">
+                    <label for="Input1">Train Name</label>
+                    <input type="text" class="form-control" id="Input1" placeholder="Express">
+                </div>
+                <div class="form-group">
+                <label for="Input2">Destination</label>
+                    <input type="text" class="form-control" id="Input2" placeholder="Station">
+                </div>
+                <div class="form-group">
+                <label for="Input3">First Train Time (HH:mm - military time)</label>
+                    <input type="time" class="form-control" id="Input3" placeholder="">
+                </div>
+                <div class="form-group">
+                <label for="Input4">Frequency (min)</label>
+                    <input type="number" class="form-control" id="Input4" placeholder="3 min">
+                </div>      
+                <button type="submit" class="btn btn-primary"id="submit-button">Submit</button>
+            </form>
+        </div>
+        <footer class="page-footer font-small blue"></footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/javascript/train.js"></script> 
+</body>
+</html>
